@@ -1,0 +1,260 @@
+/* Resetear márgenes y rellenos predeterminados */
+* {
+  margin: 0;
+  padding: 0;  
+}
+
+/* Hacer el desplazamiento suave al hacer scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Estilos de la barra de desplazamiento */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: rgb(73, 71, 71); /* Color de fondo de la barra de desplazamiento */
+  border-radius: 5px; /* Borde redondeado */
+}
+::-webkit-scrollbar-thumb {
+  background: #a9af99; /* Color del indicador de la barra de desplazamiento */
+  border-radius: 5px; /* Borde redondeado */
+}
+::-webkit-scrollbar-thumb:hover {  
+  background: #a58585; /* Color del indicador al pasar el mouse */
+}
+
+/* Estilo de la imagen de fondo en el encabezado */
+.header-wrap {
+  height: calc(100vh - 56px); /* Establecer la altura del encabezado */
+  position: relative;
+  background: url(/assets/office-min.jpg) no-repeat center center; /* Imagen de fondo centrada */
+  background-size: cover; /* Cubrir el área del encabezado */
+}
+
+/* Superposición semitransparente sobre la imagen de fondo */
+.header-wrap::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(51, 34, 34, 0.5); /* Color de superposición semitransparente */
+}
+
+/* Opacidad de la imagen de fondo */
+.header-wrap > img {
+  opacity: 40%; /* Opacidad de la imagen */
+  width: 100%;
+  height: 100vh;
+}
+
+/* Estilo de la sección Acerca de */
+.about_image > img {
+  max-width: 130%; /* Ancho máximo de la imagen */
+  margin: -50px; /* Margen negativo para superponer la imagen sobre el texto */
+  position: relative;
+}
+
+/* Estilo de la imagen en la sección Acerca de */
+.about_image{
+  height: 500px; /* Altura de la imagen */
+  width: 500px; /* Ancho de la imagen */
+  overflow: hidden; /* Ocultar contenido que exceda los límites del contenedor */
+  padding-left: 5%; /* Añadir un pequeño margen a la izquierda */
+  justify-content: center;
+}
+
+/* Estilo del texto en la sección Acerca de */
+.about_text{
+  text-align: justify; /* Alinear el texto justificado */
+}
+
+/* Estilos generales de la sección Acerca de */
+.about {
+  justify-content: center;
+}
+
+.about > .row {
+  justify-content: center; /* Centrar los elementos en la fila */
+  margin-top: 5px; /* Margen superior pequeño */
+}
+
+.container.about{
+  margin-top : 50px; /* Margen superior para la sección Acerca de */
+}
+
+/* Color secundario */
+.Secondary_Color {
+  color: rgb(116, 20, 20); /* Color secundario */
+}
+
+/* Estilos del texto de bienvenida */
+.welcome-outer {
+  width: auto;
+  height: auto;
+  position: absolute;
+  bottom: 50px;
+  left: 90px;
+  color: rgb(161, 156, 156); /* Color del texto */
+}
+
+/* Ajustes responsivos para pantallas pequeñas */
+@media screen and (max-width: 1024px) {
+  .welcome-outer {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    top: 75%; /* Posicionamiento en pantallas pequeñas */
+  }
+}
+
+/* Estilos de la sección de soluciones */
+.solutions {
+  background-image: linear-gradient(rgba(240, 236, 236, 0.527), rgba(213, 194, 194, 0.5)), url(/assets/solutions-comp.jpg); /* Imagen de fondo con gradiente */
+  background-size: cover; /* Cubrir el área de la sección */
+  background-repeat: no-repeat; /* No repetir la imagen de fondo */
+  display:flex;
+  place-content: center;
+  height: 18rem; /* Altura de la sección */
+  background-position: center; /* Posición de la imagen de fondo */
+  width: 100%;
+}
+
+/* Estilos del texto en la sección de soluciones */
+.solutions p, .solutions p a {
+  color: rgb(61, 48, 48); /* Color del texto */
+  font-size: 2rem; /* Tamaño de fuente */
+  text-align: center; /* Alinear el texto al centro */
+  font-weight: bold; /* Negrita */
+  opacity: none; /* Opacidad del texto */
+  margin-bottom: 0; /* Margen inferior */
+}
+
+/* Estilos para la sección de contribuyentes */
+.contributors {
+  margin-bottom: 50px; /* Margen inferior */
+}
+
+/* Estilos del contenedor de cada contribuyente */
+.contributor-wrap {
+  margin: 10px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  transition-duration: 200ms;
+}
+
+/* Estilos al pasar el mouse sobre el contenedor de cada contribuyente */
+.contributor-wrap:hover {
+  border-color: rgba(36, 36, 250, 0.3); /* Color del borde al pasar el mouse */
+  transform: scale(1.05); /* Escalar ligeramente el contenedor */
+  background-color: rgba(36, 36, 250, 0.1); /* Color de fondo al pasar el mouse */
+}
+
+/* Estilos para el enlace dentro del contenedor de cada contribuyente */
+.contributor-wrap:hover a {
+  color: rgb(36, 36, 250); /* Color del enlace al pasar el mouse */
+}
+
+/* Estilos para la imagen de cada contribuyente */
+.image-wrap {
+  width: 130px; /* Ancho de la imagen */
+  height: 130px; /* Altura de la imagen */
+  border-radius: 50%; /* Borde redondeado */
+  margin-bottom: 10px; /* Margen inferior */
+  box-shadow: 0 0 8px 3px black; /* Sombra */
+}
+
+/* Estilos del título de la sección de contribuyentes */
+.title-wrap {
+  text-align: center; /* Alinear al centro */
+  margin-bottom: 50px; /* Margen inferior */
+}
+
+.contributors > h3 {
+  margin-top: 20px; /* Margen superior */
+}
+
+/* Botón para mostrar más contribuyentes */
+.show-more-btn {
+  display: flex;
+  justify-content: center; /* Centrar horizontalmente */
+}
+
+/* Estilos para la sección de tecnología */
+.technology {
+  margin-top: 60px; /* Margen superior */
+}
+
+/* Estilos para el contenedor de la cuadrícula de tecnología */
+.techgrid {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 20px;
+  flex-wrap: wrap;
+}
+
+/* Pseudo elemento ::after para alinear correctamente los elementos en la cuadrícula */
+.techgrid::after {
+  content: "";
+  flex: auto;
+}
+
+/* Estilos para las imágenes de tecnología */
+.img-tech {
+  width: calc(11% - 59px); /* Ancho de la imagen */
+  margin: 20px 30px 20px 30px; /* Margen */
+}
+
+/* Estilos al pasar el mouse sobre las imágenes de tecnología */
+.img-tech:hover {
+  border-color: rgba(36, 36, 250, 0.3); /* Color del borde al pasar el mouse */
+  transform: scale(1.05); /* Escalar ligeramente */
+  background-color: rgba(36, 36, 250, 0.1); /* Color de fondo al pasar el mouse */
+}
+
+/* Estilos para la flecha de desplazamiento hacia arriba */
+.scroll-up-wrap {
+  background-color: transparent;
+  position: fixed;
+  bottom: 30px;
+  right: 20px;
+  z-index: 100;
+  cursor: pointer;
+  display: none; /* Ocultar por defecto */
+}
+
+.scroll-up-wrap img {
+  width: 30px; /* Ancho de la imagen */
+}
+/* Estilos para la animación de carga */
+.loading-animation {
+  display: none; /* Ocultar por defecto */
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+  width: 50px;
+  height: 50px;
+  border: 3px solid rgba(0, 0, 0, 0.3);
+  border-top-color: #333;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+

@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-smooth-scroll/1.5.3/jquery.smooth-scroll.min.js"></script>
+
+    <title>ProSolutions</title>
+</head>
+
+<body>
+
+    <div id="scrollArrow" class="scroll-up-wrap">
+        <img src="assets/arrow.gif" alt="flecha" srcset="">
+    </div>
+
+    <!-- Contenedor -->
+    <div class="header">
+        <!-- Barra de navegación -->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand px-3" href="#"><span class="text-danger">Pro</span>Solutions</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item px-3">
+                            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                        </li>
+                        <li class="nav-item px-3">
+                            <a class="nav-link" href="#">Servicios</a>
+                        </li>
+                        <li class="nav-item px-3">
+                            <a class="nav-link" href="#about">Acerca de</a>
+                        </li>
+                        <li class="nav-item px-3">
+                            <a class="nav-link" href="#contributors">Contribuyentes</a>
+                        </li>
+                        <li class="nav-item px-3">
+                            <a class="nav-link" href="#solutions">Soluciones</a>
+                        </li>
+                        <li class="nav-item px-3">
+                            <a class="nav-link" href="#technology">Tecnología</a>
+                        </li>
+                        <li class="nav-item px-3">
+                            <a class="nav-link" href="#contacto">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Imagen de fondo -->
+        <div class="header-wrap">
+            <!-- Texto de bienvenida -->
+            <div class="welcome-outer">
+                <h6>CREANDO UN FUTURO MEJOR</h6>
+                <h3>Intentamos lo mejor, y </br> nos aseguramos de entregar lo mejor</h3>
+                <p>Nuestra empresa busca soluciones emprendedoras para la tecnología moderna. Estamos aquí para entrar </br>en el mundo globalizado con nuestra energía y esfuerzo.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sección Acerca de -->
+    <div class="container about" id="about">
+        <div class="row">
+            <div class="d-none d-md-block col-md-12 col-lg-6 about_image">
+                <img src="assets/about.jpg">
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-6 about_text">
+                <h3 class="Secondary_Color">//SOBRE LA EMPRESA</h3>
+                <h1>Tu Socio Para<br>Innovaciones de <span class="Secondary_Color">Software</span></h1>
+                <p>
+                    Como la organización orientada a la tecnología principal, en Seekers Cloud trabajamos para desafiar las suposiciones de los clientes sobre las posibilidades con nuestras propias ideas.
+                    En nuestros diseños, se trata de producir algo que la gente disfrute.
+                </p>
+                <p>
+                    Nuestro objetivo en Seekers Cloud es desafiar las preconcepciones de los clientes con nuestras propias ideas ofreciendo tecnología de vanguardia.
+                    Creamos todos nuestros productos para proporcionar algo que a nuestros clientes les encantará. Para respaldar nuestras afirmaciones de diseño,
+                    creemos que nuestros diseños son excelentes ejemplos de obras maestras de alta calidad donde el arte y la habilidad se encuentran para inspirar tus pensamientos y te aseguramos un trabajo de primera categoría.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sección de Contribuyentes -->
+    <div class="container contributors" id="contributors">
+        <h3 class="title-wrap">Nuestros Contribuyentes</h3>
+        <div class="row" id="contributor">
+        </div>
+
+        <div class="show-more-btn">
+            <button id="btnShowMore" class="btn btn-outline-secondary" style="display: none;">Mostrar más</button>
+        </div>
+    </div>
+
+    <!-- Sección Soluciones -->
+    <div class="solutions" id="solutions">
+        <div class="content">
+            <p>Nos encanta lo que hacemos y resolvemos tus problemas de TI</p>
+            <p><a href="#">Soluciones Empresariales</a></p>
+        </div>
+    </div>
+
+
+    <!-- Sección Tecnología -->
+    <div class="container technology" id="technology">
+        <h3 class="title-wrap">Tecnología</h3>
+        <div class="techgrid">
+            <img src="assets/TechSection/springboot.png" alt="springboot" class="img-tech">
+            <img src="assets/TechSection/angular.png" alt="angular" class="img-tech">
+            <img src="assets/TechSection/css3.png" alt="css3" class="img-tech">
+            <img src="assets/TechSection/html5.png" alt="html5" class="img-tech">
+            <img src="assets/TechSection/JS.png" alt="JS" class="img-tech">
+            <img src="assets/TechSection/py.png" alt="py" class="img-tech">
+            <img src="assets/TechSection/CProgramming.png" alt="CProgramming" class="img-tech">
+            <img src="assets/TechSection/Java.png" alt="Java" class="img-tech">
+            <img src="assets/TechSection/mongo.png" alt="mongo" class="img-tech">
+            <img src="assets/TechSection/mysql.png" alt="mysql" class="img-tech">
+            <img src="assets/TechSection/NodeJS.png" alt="NodeJS" class="img-tech">
+            <img src="assets/TechSection/react.png" alt="react" class="img-tech">
+            <img src="assets/TechSection/aws.png" alt="aws" class="img-tech">
+            <img src="assets/TechSection/intellij.png" alt="intellij" class="img-tech">
+        </div>
+    </div>
+     <!-- se ah agregado un formulario de contactro  -->
+    <!-- Sección de Contacto -->
+    <div class="container contact" id="contacto">
+        <h3 class="title-wrap">Contacto</h3>
+        <form id="formulario-contacto">
+            <div class="mb-3">
+                <label for="nombre" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="nombre" name="nombre" required>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Correo Electrónico</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+            <div class="mb-3">
+                <label for="mensaje" class="form-label">Mensaje</label>
+                <textarea class="form-control" id="mensaje" name="mensaje" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+
+        </div>
+        <!-- Agrega este elemento de carga en tu HTML -->
+        <div id="loading-animation" class="loading-animation"></div>
+
+
+    <script src="js/main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script> 
+
+</body>
+
+</html>
